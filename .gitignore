@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated datasets - gigabytes, and reproducible from the scripts.
+# Keep the directories, ignore what lands in them.
+data/raw/*
+data/processed/*
+!*/.gitkeep
+
+# Trained weights are kept: a couple of MB, but hours of data generation
+# and training to reproduce, and cribbage/players.py will not run without
+# them.
+!checkpoints/*.pt
+
+.ipynb_checkpoints/
+.DS_Store
